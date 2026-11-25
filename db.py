@@ -25,8 +25,8 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Full address of our database
 # DATABASE_URL = f"{SERVER_URL}/{DB_NAME}"
-DATABASE_URL = "postgresql+psycopg2://training_ann2_user:hNG5tyHV83T4HDuJU5UrKeGHZ3HkgI5Y@dpg-dc38d4p5efls73b5lgf0-a.ohio-postgres.render.com/training_ann2"
-
+#DATABASE_URL = "postgresql+psycopg2://training_ann2_user:hNG5tyHV83T4HDuJU5UrKeGHZ3HkgI5Y@dpg-dc38d4p5efls73b5lgf0-a.ohio-postgres.render.com/training_ann2"
+DATABASE_URL="postgresql+psycopg2://sql_a51x_user:ChTOhvvtK5aZmP2bXG1O30fNpOSsLOtx@dpg-dc3a708u01pc73e2919g-a.ohio-postgres.render.com/sql_a51x"
 engine = create_engine(DATABASE_URL)
 session_local = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 base = declarative_base()
